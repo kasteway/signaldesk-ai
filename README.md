@@ -1,6 +1,6 @@
 # SignalDesk AI
 
-**An interview-ready Applied AI case study for financial-services operations.** SignalDesk turns a complete six-month slice of public CFPB money-transfer complaints into a weekly issue monitor, a grounded question-answering layer, and three MCP tools an AI client can call. [Open the interactive dashboard](https://kasteway.github.io/signaldesk-ai/) · [Study the build](docs/STUDY_GUIDE.md)
+**An interview-ready Applied AI case study for financial-services operations.** SignalDesk turns a complete six-month slice of public CFPB money-transfer complaints into a weekly issue monitor, a grounded question-answering layer, and three MCP tools an AI client can call. [Open the interactive dashboard](https://kasteway.github.io/signaldesk-ai/web/) · [Study the build](docs/STUDY_GUIDE.md)
 
 ![SignalDesk dashboard preview](docs/preview.png)
 
