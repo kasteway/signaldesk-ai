@@ -22,7 +22,7 @@ class SignalDeskTests(unittest.TestCase):
             self.assertGreaterEqual(s['baseline'], 5)
             self.assertGreaterEqual(s['score'], 3)
             self.assertGreaterEqual(s['observed']/s['baseline'], 1.4)
-            self.assertGreaterEqual(s['week'], '2024-02-05')
+            self.assertGreaterEqual(s['week'], '2024-01-29')
 
     def test_retrieval_grounding(self):
         hits = retrieve('fraud scam', cards(self.data))

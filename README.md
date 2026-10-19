@@ -31,7 +31,7 @@ Then open `http://localhost:8000/web/`. To use the MCP server, configure your cl
 
 ## Review the result
 
-The leading issue in this filtered slice is **Fraud or scam**: 2,929 complaints, or 36.8% of complaints in scope. The weekly screen surfaces three issue-week combinations for review. The method, thresholds, edge-week treatment, source query, and test cases are explained in [`METHOD.md`](METHOD.md). The count is *not* a population-adjusted fraud rate.
+The leading issue in this filtered slice is **Fraud or scam**: 2,929 complaints, or 36.8% of complaints in scope. The weekly screen surfaces four issue-week combinations for review. The method, thresholds, edge-week treatment, source query, and test cases are explained in [`METHOD.md`](METHOD.md). The count is *not* a population-adjusted fraud rate.
 
 ## Where I would take it in a business setting
 

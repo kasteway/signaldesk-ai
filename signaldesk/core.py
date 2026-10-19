@@ -51,8 +51,8 @@ def analyze(rows: list[dict]) -> dict:
         timely_total[row["timely"] or "Unknown"] += 1
 
     weeks = sorted(by_week)
-    # The first and last weeks are partial calendar weeks; show them but do not alert on them.
-    complete_weeks = [w for w in weeks if w >= "2024-01-08" and w <= "2024-06-17"]
+    # This extract begins on Monday and ends on Sunday, so every observed week is complete.
+    complete_weeks = weeks
     signals = []
     for issue, total in issue_total.items():
         if total < 100:

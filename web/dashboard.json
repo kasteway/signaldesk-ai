@@ -277,6 +277,14 @@
       "change_pct": 115
     },
     {
+      "issue": "Managing, opening, or closing your mobile wallet account",
+      "week": "2024-01-29",
+      "observed": 30,
+      "baseline": 13.5,
+      "score": 4.49,
+      "change_pct": 122
+    },
+    {
       "issue": "Money was not available when promised",
       "week": "2024-03-04",
       "observed": 40,

@@ -18,7 +18,7 @@ CFPB public API → complete filtered extract → validation → weekly aggregat
 
 - **Data acquisition:** Three bounded CFPB API calls. Each returned record count must equal the API total. See [`data/provenance.json`](../data/provenance.json).
 - **Validation:** Duplicate IDs, allowed date range, and expected product. See [`signaldesk/core.py`](../signaldesk/core.py).
-- **Measurement:** Monday-start weekly totals and issue mix; incomplete edge weeks are not screened.
+- **Measurement:** Monday-start weekly totals and issue mix; the January–June 2024 extract consists of complete Monday–Sunday weeks, with the first four used as baseline.
 - **Statistical screening:** Four-week mean plus absolute and relative thresholds. See [`METHOD.md`](../METHOD.md).
 - **Evidence retrieval:** Local term weighting over computed cards; returns cited facts. See [`signaldesk/brief.py`](../signaldesk/brief.py).
 - **Tool use:** An AI client can ask MCP for overview, signals, or cited evidence. See [`signaldesk/mcp_server.py`](../signaldesk/mcp_server.py).

@@ -17,7 +17,7 @@ Records are grouped by Monday-start calendar week and issue. For each complete w
 3. Observed is at least 1.4 times the prior mean.
 4. `(observed − expected) / sqrt(expected)` is at least 3.
 
-The first and final calendar weeks in the date range are partial and are excluded from signal scoring. This is a heuristic based on a Poisson-style variance assumption; it is not a calibrated probability or a causal result. It can be sensitive to seasonality, duplicate behavior, changing CFPB category definitions, and the fact that publication and complaint dates differ. An investigation should validate the source and compare with exposure denominators.
+This extract begins on Monday and ends on Sunday, so both edge weeks are complete. The first four weeks provide the initial baseline; scoring starts with the fifth week. This is a heuristic based on a Poisson-style variance assumption; it is not a calibrated probability or a causal result. It can be sensitive to seasonality, duplicate behavior, changing CFPB category definitions, and the fact that publication and complaint dates differ. An investigation should validate the source and compare with exposure denominators.
 
 ## Retrieval and MCP boundaries
 
