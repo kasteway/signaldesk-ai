@@ -1,0 +1,17 @@
+{
+  "source": "https://www.consumerfinance.gov/data-research/consumer-complaints/search/api/v1/",
+  "filters": {
+    "product": "Money transfer, virtual currency, or money service",
+    "date_received_min": "2024-01-01",
+    "date_received_max": "2024-06-30"
+  },
+  "retrieved_at_utc": "2026-10-19T11:05:03.118997+00:00",
+  "rows": 7953,
+  "partition_counts": [
+    2592,
+    2742,
+    2619
+  ],
+  "sha256": "b45fd113582001d414fba795a7fb38946c1bdd2f9b4f72e1e4198da1ad709af4",
+  "note": "Selected public fields only; no narratives, names, ZIP codes, or company identifiers."
+}

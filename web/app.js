@@ -1,0 +1,9 @@
+const d=window.SIGNALDESK_DATA;
+const fmt=n=>n.toLocaleString('en-US');
+document.getElementById('total').textContent=fmt(d.total);
+document.getElementById('top-share').textContent=(100*d.issues[0].count/d.total).toFixed(1)+'%';
+document.getElementById('top-label').textContent=d.issues[0].name;
+document.getElementById('signal-count').textContent=d.signals.length;
+const trend=document.getElementById('trend');const max=Math.max(...d.weeks.map(w=>w.count));d.weeks.forEach(w=>{const b=document.createElement('div');b.className='bar';b.style.height=(100*w.count/max)+'%';b.dataset.tip=`${w.week}: ${fmt(w.count)}`;b.setAttribute('aria-label',`${w.week}: ${fmt(w.count)} complaints`);trend.appendChild(b)});
+function rows(id,items){const target=document.getElementById(id);const top=items[0].count;items.forEach(x=>{const row=document.createElement('div');row.className='list-row';const a=document.createElement('div');const name=document.createElement('span');name.className='name';name.textContent=x.name;name.title=x.name;const track=document.createElement('div');track.className='track';const fill=document.createElement('div');fill.className='fill';fill.style.width=(100*x.count/top)+'%';track.appendChild(fill);a.append(name,track);const count=document.createElement('strong');count.textContent=fmt(x.count);row.append(a,count);target.appendChild(row)})}rows('issues',d.issues.slice(0,6));rows('products',d.sub_products.slice(0,6));
+const list=document.getElementById('signal-list');d.signals.slice(0,6).forEach(s=>{const c=document.createElement('article');c.className='signal-card';c.innerHTML=`<div class="meta">WEEK OF ${s.week}</div><h3></h3><div class="numbers"><strong>${fmt(s.observed)}</strong><span>vs ${s.baseline} prior<br>four-week mean</span></div><p>+${s.change_pct}% above baseline ↗</p>`;c.querySelector('h3').textContent=s.issue;list.appendChild(c)});
